@@ -15,3 +15,10 @@ footer{
 	background-color: #645677;
 	font-size: 15px;
 }
+
+/*Small devices (landscape phones, 576px and down)*/
+@media (max-width: 576px) { 
+    footer{
+        padding: 22px 31px 21px 31px;
+    }
+ }
