@@ -24,11 +24,21 @@ function addZero(i) {
 }
 
 function createEvent() {
-    var newEvent = document.getElementById('text').value;
+    var newEvent = document.getElementById('text').value;    
     var newDate = new Date();
+    return newEvent;
+}
+
+function putEvent() {
+    var putEvent = document.getElementById('put-event');
+
 }
 
 
+
+btnSend.addEventListener('click', function(event){
+    alert('holitas');
+})
 
 
 
