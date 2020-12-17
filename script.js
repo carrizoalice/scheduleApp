@@ -26,18 +26,19 @@ function addZero(i) {
 function createEvent() {
     var newEvent = document.getElementById('text').value;    
     var newDate = new Date();
+    putEvent(newEvent);
     return newEvent;
+    
 }
 
-function putEvent() {
+function putEvent(newEvent) {
     var putEvent = document.getElementById('put-event');
-
+    putEvent.innerHTML = newEvent;
 }
 
-
-
-btnSend.addEventListener('click', function(event){
-    alert('holitas');
+btnSend.addEventListener('click', function(event){  
+    createEvent();
+    
 })
 
 
