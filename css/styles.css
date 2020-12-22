@@ -48,10 +48,12 @@ footer{
 	background-color: #476974;
 	font-weight: 300;
 	color: #fff;
-	padding: 15px;
-	
+	padding: 15px;	
   }
 
+  .button-cal{
+	padding: 15px;
+  }
   #calendar .calendar{
 	  padding: 0px;
   }

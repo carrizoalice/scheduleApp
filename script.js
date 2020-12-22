@@ -26,17 +26,20 @@ function addZero(i) {
 function createEvent() {
     var newEvent = document.getElementById('text').value;    
     var newDate = new Date();    
-    putEvent(newEvent, newDate);
-    return newEvent;    
+    putEvent(newEvent, newDate);      
+   
+    
 }
 
 function putEvent(newEvent, newDate) {
     var putEvent = document.getElementById('put-event');
-    putEvent.innerHTML = '<div>' + newDate.getDate()  + "-" + (newDate.getMonth()+1) + "-" + newDate.getFullYear() + '<br>'+ newEvent +'</div>';
+    putEvent.innerHTML += '<div>' + newDate.getDate()  + "-" + (newDate.getMonth()+1) + "-" + newDate.getFullYear() + '<br>'+ newEvent +'</div>'+ '<br>';
 }
 
-btnSend.addEventListener('click', function(event){  
+btnSend.addEventListener('click', function(event){          
     createEvent();    
+     document.getElementById('text').value = ''; 
+
 })
 
 
