@@ -53,6 +53,7 @@ footer{
 
   .button-cal{
 	padding: 15px;
+	display: flex;
   }
   #calendar .calendar{
 	  padding: 0px;
@@ -61,3 +62,23 @@ footer{
   .day{
 	  font-size: 70px;
   }
+
+  .days-week {
+	  display: flex;
+	  font-size: 12px;
+	justify-content: center;
+  }
+
+  .days-week div{
+	  color: #476974;
+	  padding: 5px 12px 5px 12px;
+  }
+
+  @media (max-width: 480px) {
+	#calendar .calendar{
+		margin: 5px;
+	}
+
+}
+
+

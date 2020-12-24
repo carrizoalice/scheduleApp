@@ -44,6 +44,10 @@ btnSend.addEventListener('click', function(event){
 
 
 
+for(let i = 0 ; i < 10; i++){
+    document.querySelector('.button-cal').innerHTML += '<div>'+i+'</div>';
+}
+
 
 
 
